@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;1,100&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+    <!-- <script src="https://kit.fontawesome.com/fccaf036c3.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <h1 class="header">MY TODO LIST</h1>
+    <div class="div">
+        <div class="todocontainer">
+            <p class="error dis"> you have to write sumtin</p>
+            <!-- <p>nigga u bald</p>
+            <p>nigga u freakey</p> -->
+            <form action="">
+
+                <input type="text" name="" id="todoadd" placeholder="Enter Task">
+                <input type="submit" value="+" id="todoaddbtn" class="btn">
+
+            </form>
+        </div>
+        <div class="addedtasksection">
+            <div class="addedtask" id="${taskId}">
+                <span class="colorBlock" id="colorblock"></span>
+                <p class="todotask">lore</p>
+                <div class="button-container">
+                    <button class="edit-btn btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="takedcomplete btn"><i class="fa-solid fa-check"></i></button>
+                    <button class="delete btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="popup" class="popup is-hidden is-visuallyHidden">
+        <!-- popup content -->
+        <div class="popup-content">
+            <div class="popupContainer1">
+                <p>Wanna make and Edit ?</p>
+                <span id="closeModal" class="Close">&times;</span>
+            </div>
+            <div class="popupcontainer2">
+                <p class="error-2 dis"> you have to write sumtin</p>
+                <form action="" id="editForm">
+
+                    <input type="text" name="" id="toEditadd" placeholder="Enter Task">
+                    <input type="submit" value="+" id="toEditbtn" class="btn">
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/fccaf036c3.js" crossorigin="anonymous"></script>
+
+</body>
+<script src="todolist.js"></script>
+
+</html>
